@@ -9,15 +9,14 @@ const withHeaders = () => {
 }
 
 export const getAllEvents = () => {
-  return axios.get(`${baseUrl}/talks`)
+  return axios.get(`${baseUrl}/talks/`)
 }
 
 export const getSingleEvent = id => {
-  return axios.get(`${baseUrl}/talks/${id}`)
+  return axios.get(`${baseUrl}/talks/${id}/`)
 }
 
 export const createEvent = data => {
-  console.log(data)
   return axios.post(`${baseUrl}/talks/`, data, withHeaders())
 }
 
@@ -26,7 +25,7 @@ export const editEvent = (data, id) => {
 }
 
 export const deleteEvent = id => {
-  return axios.delete(`${baseUrl}/talks/${id}`, withHeaders())
+  return axios.delete(`${baseUrl}/talks/${id}/`, withHeaders())
 }
 
 export const registerUser = data => {
@@ -54,7 +53,7 @@ export const updateBasket = (data, id) => {
 }
 
 export const userBasket = () => {
-  return axios.get(`${baseUrl}/basket/query`, withHeaders())
+  return axios.get(`${baseUrl}/basket/query/`, withHeaders())
 }
 
 export const createBasket = () => {
@@ -72,8 +71,6 @@ export const createComment = data => {
 export const createTicket = data => {
   return axios.post(`${baseUrl}/tickets/`, data, withHeaders())
 }
-
-
 
 export const getTicket = id => {
   return axios.get(`${baseUrl}/tickets/${id}/`, withHeaders())

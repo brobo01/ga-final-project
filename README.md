@@ -52,25 +52,27 @@ On the event index page, we included options to filter the talks by a number of 
 
 ![Screenshot3](readme-images/Screenshot-3.png)
 
-Once a user is logged in, they can see further detail about the talk, including the information about the event and any event tags which have been added. The user can then click the 'Add to Basket'
+Once a user is logged in, they can see further detail about the talk, including the information about the event and any event tags which have been added. The user can then click the 'Add to basket', which adds the talks to the basket on their profile. 
 
 ![Screenshot4](readme-images/Screenshot-4.png)
 
+If the user then goes to the basket section of their profile, they can see the talks in their basket and also go to check out. This moves the event into their Tickets section and also creates a VR code on their ticket using a third party API. 
 
+![Screenshot7](readme-images/Screenshot-7.png)
 
+For all events that the user is attending, they are able to see any polls which have been asked of the attendees, as well as answer them and see how the rest of the audience has voted, and leave comments too for the presenter.
 
-
-[]
-
-
+![Screenshot6](readme-images/Screenshot-6.png)
 
 ### Bugs and Challenges
-Filtering - categories
+The main bug I encountered was getting the filtering and searching fields to work together, so the user narrows down the list of events with each added filter rather than conducting a new filter each time.
 
 ### Wins
-[]
+As the team chose to work together again after Project 3, a big win was the same level of clear, positive, open and collaborative communication we had on Project 3.
+
+On the build, the big win came from getting the filtering of the event index page working as intended!
 
 ### Future Content
-Add categories to new talks
+The one aspect I would like to add in the future is the able to host live streaming of presenters.
 
 

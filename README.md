@@ -41,7 +41,24 @@ The application is deployed on Heroku and can be found at https://eventr-ga.hero
 ### Approach
 At first we considerd building a polling app but chose to develop the concept further to include the events themselves with polls and user comments, as well as functionality for logging in, putting tickets in a basket and using a third-party API to put a VR code on the ticket.
 
-Due to the complexity of the back-end structure, all three team members discussed and agreed this prior to constructing the back-end models and completing the wireframes. We divided the team so that Krissy and Assia focused on the back-end and I on the front-end. This enable me to focus on getting the structure of the pages built as per the wireframes we had designed. The front-end utilised both React and React Hooks.
+We decided that, having completed Road Trippers as a team and having had a great time while doing it, we would keep the same team for eventr! This meant that we were comfortable with each others working styling and communication, which we agreed at the start of the project to be even clearer about. To that end, and as with Road Trippers, every morning have a stand up to discuss our individual goals for the day, what we were going to work on, whether anyone had any blockers and wanted to pair code or discuss, how we were doing against the plan and how we were doing for features against the deadline. Again, we would then stay on Zoom all day, taking group breaks throughout the day and working till generally the same time every evening - we very much embraced the 'marathon not sprint' mentality so that no one got 'code blind' and all wrote clean, understandable code. It worked for us on Road Tripper's, and if it isn't broken, don't try to fix it!
+
+### The Build
+In approaching the build, due to the complexity of the back-end structure, all three team members discussed and agreed this prior to constructing the back-end models and completing the wireframes. We divided the team so that Krissy and Assia focused on the back-end and I on the front-end. This enable me to focus on getting the structure of the pages built as per the wireframes we had designed. The front-end utilised both React and React Hooks.
+
+The back-end uses several models, such as for talks, users, polls, categories and comments, with a variety of one-to-many, one-to-one and many-to-many relationships depending on the model. Once the models were in place, my team mates built out the serializers to convert the data to be sent in HTTP to be rendered into JSON. Following this, the views were completed to ensure the data requests to the back-end were returning the correct information.
+
+While my team mates were building out the back-end, I built the framework for the front-end, getting the MVP level site working with the React Router. The final router can be seen below.
+
+![Routercode](readme-images/RouterCode.png)
+
+Once this was complete I added regular React components for the Log In and Register pages and moved on to the event index page which was built using React Hooks. The filtering and search functionality on the index page took a considerable amount of work, as the individual filter items were nested deeply. The code to filter by category can be seen below.
+
+![Filtercode](readme-images/FilterCode.png)
+
+Once the filter code had been written, I was able to add functionality to the event show page which shows cards for 3 similar events based on the categories. 
+
+The final challenge on the build was to work with my team mate to the get the polls working on the event, after which we all moved on to styling the site as there were many small parts which needed work.
 
 ### User Experience
 Our goal was to create a clean and modern feel and to keep the user interface as simple to use as possible. To that end, we created a landing page which takes users to the event index page.
@@ -71,6 +88,9 @@ The main bug I encountered was getting the filtering and searching fields to wor
 As the team chose to work together again after Project 3, a big win was the same level of clear, positive, open and collaborative communication we had on Project 3.
 
 On the build, the big win came from getting the filtering of the event index page working as intended!
+
+### Key Learnings and Takeaways
+This project served as a great opportunity to use React Hooks - it would've been simple to stick with React but I was keen to push myself and the rest of the team to get comfortable with it. It took time, but in refusing to give up on Hooks we all became comfortable with how it works, the differences with, and strengthes over, normal React.
 
 ### Future Content
 The one aspect I would like to add in the future is the able to host live streaming of presenters.
